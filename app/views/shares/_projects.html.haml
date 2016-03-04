@@ -7,7 +7,7 @@
   .projects-container
     - (1..6).each do |i|
       .col-md-4{class: (t "projects.filter.filter-#{i}")}
-        .background-image-holder{:style => "background: url(/assets/project#{i}.jpg) center;"}
+        .background-image-holder{:style => "background: url(#{asset_path "project#{i}.jpg"}) center;"}
           .hover-state
             .content
               .title
