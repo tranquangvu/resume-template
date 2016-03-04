@@ -1,0 +1,13 @@
+.row
+	- (1..4).each do |i|
+		.col-md-3
+			.icon-contain
+				= fa_icon (t  "highlights.highlights-#{i}.icon")
+			.vertical-line
+			.circle
+			%h4
+				= t "highlights.highlights-#{i}.title"
+			%span
+				= t "highlights.highlights-#{i}.position"
+			%span
+				= t "highlights.highlights-#{i}.univer"

@@ -1,0 +1,21 @@
+%header.page-header#home
+  .container.info
+    .row
+      .col-md-12
+        %h1
+          = t "infomation.name"
+        %h4
+          = t "infomation.position"
+        %ul.list-unstyled
+          - %w(twitter facebook-square linkedin).each do |f|
+            %li.social-icon
+              = link_to "" do
+                = fa_icon f
+- (arr = %w(highlights education about skills projects)).each do |sec|
+  %section{:id => sec, :class =>  arr.index(sec)%2 == 0 ? "#{sec} dark" : "#{sec} light"}
+    %h2.title
+      = t "#{sec}.title"
+    - if(sec != "education" && sec != "about")
+      .intro
+        = t "#{sec}.intro"
+    = render "shares/#{sec}"

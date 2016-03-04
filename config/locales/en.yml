@@ -1,0 +1,155 @@
+en:
+  infomation:
+    name: 'Samuel Thompson'
+    position: 'Web & Interaction Designer'
+
+  highlights:
+    title: 'Career Highlights'
+    intro: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.'
+    highlights-1:
+      title: '2008 - Graduated'
+      icon: 'book'
+      position: 'Bachelor of Design'
+      univer: 'RMIT University Melbourne'
+
+    highlights-2:
+      title: '2009 - Joined GoCorp.'
+      icon: 'css3'
+      position: 'Junior Developer'
+      univer: 'UI / UX Design'
+
+    highlights-3:
+      title: '2011 - Attained PhD.'
+      icon: 'paint-brush'
+      position: 'Emergent Web Design'
+      univer: 'University of Melbourne'
+
+    highlights-4:
+      title: '2013 - Spoke at Meetup'
+      icon: 'microphone'
+      position: 'Efficient JS Modelling'
+      univer: 'Meetup 2014 - Melbourne'
+
+  education:
+    title: 'Education & Employment'
+    content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
+    intro-1: 
+      title: 'Bachelor of Design & Communication - RMIT University'
+      icon: 'pencil'
+    intro-2: 
+      title: 'Junior Interaction Designer - Corp & Co.'
+      icon: 'paint-brush'
+    intro-3: 
+      title: 'User Engagement Facilitator - Leehan & Tax'
+      icon: 'paper-plane'
+    intro-4: 
+      title: 'PhD. Contemporary Media - University of Melbourne'
+      icon: 'graduation-cap'
+
+  about:
+    title: 'More About Me'
+    about-1:
+      number: '25'
+      content: 'Completed Projects'
+    about-2:
+      number: '86'
+      content: 'Satisfied Clients'
+    about-3:
+      number: '15'
+      content: 'Job Offers'
+    about-4:
+      number: '0'
+      content: 'Missed Deadlines'
+  skills:
+    title: 'Skills & Expertise'
+    intro: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.'
+    design:
+      title: 'Design'
+      design-1: 
+        content: 'Responsive Web Design'
+        percent: '85%'
+      design-2: 
+        content: 'Branding & Identity'
+        percent: '75%'
+      design-3:
+        content: 'Photoshop & Illustrator'
+        percent: '65%'
+      design-4:
+        content: 'Macaw'
+        percent: '60%'
+    develop:
+      title: 'Develop'
+      develop-1: 
+        content: 'HTML & CSS3'
+        percent: '85%'
+      develop-2: 
+        content: 'Javascript / Jquery'
+        percent: '75%'
+      develop-3: 
+        content: 'PHP & MySQL'
+        percent: '65%'
+      develop-4: 
+        content: 'WordPress'
+        percent: '60%'
+  projects:
+    title: 'Check out some of my latest work'
+    intro: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.'
+    category:
+      category-1:
+        title: 'all'
+        data-filter: '*'
+      category-2:
+        title: 'branding'
+        data-filter: '.branding'
+      category-3:
+        title: 'development'
+        data-filter: '.development'
+      category-4:
+        title: 'print design'
+        data-filter: '.print'
+    filter:
+      filter-1: 'project development'
+      filter-2: 'project branding'
+      filter-3: 'project print'
+      filter-4: 'project print'
+      filter-5: 'project branding'
+      filter-6: 'project development'
+    p-name:
+      p-name-1: 'MS10UX'
+      p-name-2: 'Medium Blog Platform'
+      p-name-3: 'Identity Mockup'
+      p-name-4: 'Aurora App Icons'
+      p-name-5: 'Sketchbook Logo Mockup'
+      p-name-6: 'Muzik Home Screen'
+  footer:
+    about:
+      title: 'About Me'
+      about-1: 
+        content: '2901 Marmora Road, Glassgow, Seattle, WA 98122-1090'
+        icon: 'map-marker'
+      about-2:
+        content: '1-234-456-7890'
+        icon: 'phone'
+      about-3:
+        content: 'abc@gmail.com'
+        icon: 'envelope'
+      about-4:
+        content: 'www.facebook.com'
+        icon: 'facebook'
+    link:
+      title: 'Useful Links'
+      icon: 'chevron-circle-right'
+      link-1: 'Home Page Variations'
+      link-2: 'Awsome Slidershows'
+      link-3: 'Features and Typography'
+      link-4: 'Different & Unique Pages'
+      link-5: 'Single and Portfolios'
+      link-6: 'Recent Blogs or News'
+      link-7: ' Layered PSD Files'
+    about-resume:
+      title: 'About Resume'
+      content: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined an chunks as necessary, making this the first true generator on the Internet. Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites.'
+    image:
+      title: 'Project Photos'
+
+

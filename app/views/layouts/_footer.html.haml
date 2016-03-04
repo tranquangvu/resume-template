@@ -1,0 +1,53 @@
+%footer.footer
+  .main-container
+    .footer-grap-1
+  .footer-grap-2
+    .main-container
+      .row
+        - %w(about link about-resume image).each do |f|
+          .col-md-3
+            - case f
+            - when "about"
+              %h3
+                = t "footer.about.title"
+              %ul.list-unstyled
+                - (1..4).each do |i|
+                  %li
+                    = fa_icon (t "footer.about.about-#{i}.icon")
+                    = t "footer.about.about-#{i}.content"
+            - when "link"
+              %h3
+                = t "footer.link.title"
+              %ul.list-unstyled
+                - (1..7).each do |i|
+                  %li
+                    = fa_icon (t "footer.link.icon")
+                    = link_to (t "footer.link.link-#{i}"), "#"
+            - when "about-resume"
+              %h3
+                = t "footer.about-resume.title"
+              .content
+                = t "footer.about-resume.content"
+              = link_to image_tag('button_readmore.png', class: 'read-more-button'), root_path
+            - when "image"
+              #footer-img
+                %h3
+                  = t "footer.image.title"
+                - (1..6).each do |i|
+                  .col-md-4
+                    .footer-image{:style => "background: url(/assets/project#{i}.jpg) center;"}
+  .author
+    .main-container
+      .row
+        .col-md-6
+          Copyright &copy 2014 Ben template. All rights reserved.
+        .col-md-6
+          %ul.list-unstyled.list-inline
+            - %w(facebook twitter google-plus linkedin skype youtube rss).each do |f|
+              %li
+                = link_to "" do
+                  = fa_icon f
+  =link_to "", "#", class: 'scroll-btn'
+
+:javascript
+  scrollToTop()

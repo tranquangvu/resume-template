@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Resume | Home
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+    %meta{charset: 'utf8'}
+    %meta{name: 'viewport', content: 'content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no'}
+    %meta{name: "apple-mobile-web-app-capable", content: "yes"}
+  %body
+    = render 'layouts/header'
+    = yield
+    = render 'layouts/footer'

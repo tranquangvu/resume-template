@@ -1,0 +1,15 @@
+.nav-container
+  .navbar.navbar-inverse.top-bar{:role => "navigation"}
+    .container
+      .navbar-header
+        %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to image_tag("logo.png", alt:"logo_img", class: "navbar-brand"), root_path
+      #navbar.navbar-collapse.collapse
+        %ul.nav.navbar-nav.navbar-right
+          - %w(home highlights education skills projects).each do |f|
+            %li
+              = link_to f, "##{f}"

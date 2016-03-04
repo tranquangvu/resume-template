@@ -1,0 +1,16 @@
+.row
+  .col-md-8.col-md-offset-2
+    %ul.list-unstyled
+      - (1..4).each do |i|
+        %li
+          .title
+            = fa_icon (t  "education.intro-#{i}.icon")
+            %span
+              = t "education.intro-#{i}.title"
+          .content.none
+            = t "education.content"
+
+:javascript
+  $('li').click(function(){
+    $(this).children('.content').slideToggle(400);
+  });

@@ -1,0 +1,8 @@
+.row
+  - (1..4).each do |i|
+    .col-md-3
+      .circle-number
+        %span
+          = t "about.about-#{i}.number"
+      %h3
+        = t "about.about-#{i}.content"
