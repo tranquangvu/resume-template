@@ -1,28 +1,19 @@
-== README
+== Resume template
+Simple project for UI coding practice
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby: 2.3.1
+* Rails: 4.1.0
 
-Things you may want to cover:
+== Setup
+* Note: This is only frontend project, so don't add `config/database.yml` and don't run any `rake db:*` task
 
-* Ruby version
+- Clone project source
+- Install gem:
+    ```
+    gem install bundler
+    bundle install
+    ```
+- Start server: `rails s`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Preview
+https://github.com/tranquangvu/resume-template/blob/master/public/preview.png
