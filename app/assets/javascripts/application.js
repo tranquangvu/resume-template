@@ -15,7 +15,6 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-//= require viewportchecker
 //= require isotope.min
 
 
@@ -26,16 +25,16 @@ $(document).on('click', 'a[href^="#"]', function(e) {
   $('body, html').animate({scrollTop: id.offset().top}, 1000);
 });
 
-$(window).scroll(function(){
+$(window).scroll(function() {
     if(window.scrollY > 600) {
       $('.top-bar').addClass('active-bar');
-    }else{
+    } else {
       $('.top-bar').removeClass('active-bar');
     }
 });
 
 function scrollToTop() {
-  $(window).scroll(function(){
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 600) {
       $('.scroll-btn').fadeIn();
     } else {
@@ -43,7 +42,7 @@ function scrollToTop() {
     }
   });
 
-  $('.scroll-btn').click(function(){
+  $('.scroll-btn').click(function() {
     $('html, body').animate({scrollTop : 0},1000);
     return false;
   });

@@ -9,16 +9,5 @@
             %span
               = t "skills.#{f}.#{f}-#{i}.content"
             .holder{id: "#{f}-#{i}"}
-              .bar-process
-
-:javascript
-  $("#lst-skill").addClass("disappear").viewportChecker({
-    classToAdd: ('appear'),
-    callbackFunction: 
-      function run() { 
-        $('#lst-skill ul li').each( function() {
-          $(this).find('.bar-process').animate({
-            width: $(this).attr('data-percent')
-          }, 1000);
-        });}
-  });
+              - tname = "skills.#{f}.#{f}-#{i}.percent"
+              .bar-process{"style" => "width: #{t(tname)}"}
