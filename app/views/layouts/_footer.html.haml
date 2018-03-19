@@ -35,7 +35,8 @@
                   = t "footer.image.title"
                 - (1..6).each do |i|
                   .col-md-4
-                    .footer-image{:style => "background: url(/assets/project#{i}.jpg) center;"}
+                    - image_name = "project#{i}.jpg"
+                    .footer-image{:style => "background: url(#{asset_url(image_name)}) center;"}
   .author
     .main-container
       .row

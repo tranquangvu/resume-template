@@ -7,25 +7,25 @@
   .projects-container
     - (1..6).each do |i|
       .col-md-4{class: (t "projects.filter.filter-#{i}")}
-        .background-image-holder{:style => "background: url(#{asset_path "project#{i}.jpg"}) center;"}
+        .background-image-holder{:style => "background: url(#{asset_url "project#{i}.jpg"}) center;"}
           .hover-state
             .content
               .title
                 = t "projects.p-name.p-name-#{i}"
               = link_to "see project", "#", class: "btn btn-primary btn-std"
-              
+
 :javascript
   $('.projects-container').isotope({
     itemSelector: '.project',
     layoutMode: 'fitRows'
   });
-  
+
   $('.filter li').click(function() {
     var current = $(this);
-    
+
     current.siblings('li').removeClass('active');
     current.addClass('active');
-    
+
     var filterValue = current.attr('data-filter');
     var container = current.closest('.projects-wrapper').find('.projects-container');
     container.isotope({ filter: filterValue });
